@@ -5,10 +5,10 @@ var app = {
 
     onDeviceReady: function() {
         console.log('device ready');
-        this.getDeviceInfo();
+        this.getDeviceUUID();
     },
 
-    getDeviceUuid: function() {
+    getDeviceUUIDForElectronPlatform: function() {
         try {
             const machineIdSync = require('node-machine-id').machineIdSync;
             return machineIdSync({original: true});
@@ -18,17 +18,18 @@ var app = {
         }
     },
 
-    getDeviceInfo: function() {
+    getDeviceUUID: function() {
         const platformId = window.cordova.platformId;
         const deviceInfo = document.getElementById('device-info');
         let uuid = null;
-        if (['electron'].indexOf(platformId) >= 0) {
-            // get uuid from npm package
-            uuid = this.getDeviceUuid();
+        if (platformId.includes('electron')) {
+            // get uuid from npm package for electron platform
+            uuid = this.getDeviceUUIDForElectronPlatform();
         } else if (device && device.uuid && ['ios', 'android'].indexOf(platformId) >= 0) {
             // get uuid from cordova-plugin-device
             uuid = device.uuid;
         } else {
+            // other platforms such as browser, ...
             uuid = `The ${platformId} platform is not supported.`;
         }
         if (uuid) deviceInfo.innerHTML = `Device UUID: ${uuid}`;
