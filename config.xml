@@ -10,6 +10,8 @@
     <allow-intent href="itms-apps:*"/>
     <allow-intent href="market:*" />
     <allow-intent href="tel:*"/>
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="SplashScreenDelay" value="1000"/>
     <platform name="android">
         <icon src="/res/android/icon/ldpi.png" density="ldpi"/>
         <icon src="/res/android/icon/mdpi.png" density="mdpi"/>
@@ -59,5 +61,7 @@
         <preference name="ElectronSettingsFilePath" value="res/electron/settings.json" />
         <icon src="/res/electron/icon/icon_electron_512.png" width="512" height="512"/>
         <splash src="/res/electron/screen/electron_splash_image.png" width="620" height="300"/>
+        <preference name="SplashScreenWidth" value="620"/>
+        <preference name="SplashScreenHeight" value="300"/>
     </platform>
 </widget>
