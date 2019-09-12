@@ -1,7 +1,7 @@
 {
   "name": "electron_minimum",
   "displayName": "electron_minimum",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Electron minimum template",
   "scripts": {
     "monaca:preview": "npm run dev",
