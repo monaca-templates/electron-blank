@@ -63,5 +63,6 @@
         <splash src="/res/electron/screen/electron_splash_image.png" width="620" height="300"/>
         <preference name="SplashScreenWidth" value="620"/>
         <preference name="SplashScreenHeight" value="300"/>
+        <preference name="ShowSplashScreen" value="false"/>
     </platform>
 </widget>
