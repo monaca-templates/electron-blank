@@ -40,6 +40,8 @@
         <icon src="/res/ios/icon/icon-76@2x.png" width="152" height="152"/>
         <icon src="/res/ios/icon/icon-40.png" width="40" height="40"/>
         <icon src="/res/ios/icon/icon-40@2x.png" width="80" height="80"/>
+        <icon src="/res/ios/icon/icon-20.png" width="20" height="20"/>
+        <icon src="/res/ios/icon/icon-20@2x.png" width="40" height="40"/>
         <icon src="/res/ios/icon/icon-50.png" width="50" height="50"/>
         <icon src="/res/ios/icon/icon-50@2x.png" width="100" height="100"/>
         <icon src="/res/ios/icon/icon-small.png" width="29" height="29"/>
@@ -58,6 +60,8 @@
         <splash src="/res/ios/screen/Default-Landscape~ipad.png" width="1024" height="768"/>
         <splash src="/res/ios/screen/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
         <splash src="/res/ios/screen/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+        <preference name="scheme" value="monaca-app"/>
+        <preference name="hostname" value="localhost"/>
     </platform>
     <platform name="electron">
         <preference name="ElectronSettingsFilePath" value="res/electron/settings.json" />
