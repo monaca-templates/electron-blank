@@ -9,14 +9,14 @@
   },
   "dependencies": {
     "cordova-plugin-device": "2.0.3",
-    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-splashscreen": "6.0.0",
     "cordova-plugin-whitelist": "1.3.4",
-    "monaca-plugin-monaca-core": "3.3.0",
+    "monaca-plugin-monaca-core": "3.3.1",
     "node-machine-id": "1.1.12"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "cordova": "^9.0.0"
+    "cordova": "^10.0.0"
   },
   "cordova": {
     "plugins": {
