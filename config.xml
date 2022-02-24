@@ -4,12 +4,7 @@
     <description/>
     <author/>
     <content src="index.html"/>
-    <access origin="*"/>
     <allow-navigation href="*"/>
-    <allow-intent href="itms:*"/>
-    <allow-intent href="itms-apps:*"/>
-    <allow-intent href="market:*" />
-    <allow-intent href="tel:*"/>
     <preference name="SplashScreen" value="screen"/>
     <preference name="SplashScreenDelay" value="1000"/>
     <platform name="android">
