@@ -1,5 +1,5 @@
 {
-  "cordova-loader.js": {
+  "monaca-cordova-loader": {
     "version": "1.0.5",
     "files": [
       "components/monaca-cordova-loader/cordova-loader.js"
